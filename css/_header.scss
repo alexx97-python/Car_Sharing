@@ -1,0 +1,41 @@
+
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header{
+    background: $background;
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        .menu__list{
+            display: flex;
+            .menu__item{
+                margin: 0 15px;
+                .menu__list-link{
+                    text-transform: uppercase;
+                    color: $text-color-white;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid transparent;
+                    transition: all .5s;
+                    &:hover{
+                        border-bottom: 1px solid $text-color-white;
+                    }
+                }
+            }
+        }
+    }
+    .phone{
+        color: $text-color-white;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
