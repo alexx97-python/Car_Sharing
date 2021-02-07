@@ -19,6 +19,23 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+
+
 @import 'variables';
 @import 'header';
 @import 'top_section';
+@import 'rent_section';
+
+.application-btn{
+    text-transform: uppercase;
+    color: $text-color-white;
+    background: $background-btn;
+    padding: 16px 19px 15px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    &:hover{
+        color: $background-btn;
+        background: $text-color-white;
+        border: 1px solid $background-btn;
+    }
+}

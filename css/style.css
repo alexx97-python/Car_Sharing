@@ -76,6 +76,10 @@ body {
   line-height: 21px;
 }
 
+.top {
+  padding-bottom: 100px;
+}
+
 .top__heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,22 +107,6 @@ body {
   line-height: 28px;
   margin: 0 auto 60px;
   max-width: 470px;
-}
-
-.top__heading .top__content .application-btn {
-  text-transform: uppercase;
-  color: #fefefe;
-  background: #C5AC2D;
-  padding: 16px 19px 15px;
-  border: 1px solid transparent;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.top__heading .top__content .application-btn:hover {
-  color: #C5AC2D;
-  background: #fefefe;
-  border: 1px solid #C5AC2D;
 }
 
 .top__heading .top__slider {
@@ -222,5 +210,87 @@ body {
 
 .top__bottom .top__links .top__link + .top__link {
   margin-left: 20px;
+}
+
+.rent {
+  padding: 100px 0;
+}
+
+.rent .rent__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rent .rent__inner .rent__content {
+  width: 300px;
+}
+
+.rent .rent__inner .rent__content .rent__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.rent .rent__inner .rent__content .rent__text {
+  margin-bottom: 20px;
+}
+
+.rent .rent__inner .rent__content .rent__text + .rent__text {
+  margin-bottom: 58px;
+}
+
+.rent .rent__inner .rent__item {
+  border: 1px solid #332208;
+  width: 250px;
+  min-height: 350px;
+  padding: 0 35px 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.rent .rent__inner .rent__item .rent__item-num {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 115px;
+  opacity: 0.05;
+}
+
+.rent .rent__inner .rent__item .rent__item-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: auto;
+}
+
+.application-btn {
+  text-transform: uppercase;
+  color: #fefefe;
+  background: #C5AC2D;
+  padding: 16px 19px 15px;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.application-btn:hover {
+  color: #C5AC2D;
+  background: #fefefe;
+  border: 1px solid #C5AC2D;
 }
 /*# sourceMappingURL=style.css.map */
