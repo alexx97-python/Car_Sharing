@@ -11,5 +11,52 @@
         margin-bottom: 70px;
     }
 
-    
+    .reviews__item{
+        border: 1px solid #C5AC2D;
+        padding: 45px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 270px;
+        min-height: 300px;
+        text-align: center;
+        margin-right: 30px;
+
+        .reviews__item-name{
+            font-size: 24px;
+            line-height: 29px;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 500;
+        }
+    }
+    .slick-dots{
+        list-style: none;
+    }
+    .reviews__slider .slick-dots button {
+        background-color: #C5AC2D;
+        font-size: 0;
+        width: 8px;
+        height: 8px;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 5px;
+        line-height: 12px;
+
+    }
+
+    .reviews__slider .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+
+
+        .slick-active button{
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+
 }

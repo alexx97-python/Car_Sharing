@@ -390,6 +390,66 @@ body {
   margin-bottom: 70px;
 }
 
+.reviews .reviews__item {
+  border: 1px solid #C5AC2D;
+  padding: 45px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 270px;
+  min-height: 300px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.reviews .reviews__item .reviews__item-name {
+  font-size: 24px;
+  line-height: 29px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.reviews .slick-dots {
+  list-style: none;
+}
+
+.reviews .reviews__slider .slick-dots button {
+  background-color: #C5AC2D;
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0 5px;
+  line-height: 12px;
+}
+
+.reviews .reviews__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.reviews .reviews__slider .slick-dots .slick-active button {
+  width: 16px;
+  height: 16px;
+}
+
 .application-btn {
   text-transform: uppercase;
   color: #fefefe;
