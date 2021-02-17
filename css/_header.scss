@@ -13,8 +13,11 @@
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        
     }
+}
+
+.menu__btn{
+    display: none;
 }
 
 .phone{
@@ -42,3 +45,5 @@
         }
     }
 }
+
+
