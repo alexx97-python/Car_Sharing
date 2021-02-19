@@ -601,7 +601,29 @@ body {
   border: 1px solid #C5AC2D;
 }
 
+@media (max-width: 1250px) {
+  .benefits__images {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .rent .rent__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .rent .rent__inner .rent__content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 1000px) {
+  .footer .menu {
+    display: none;
+  }
   .top__heading {
     display: block;
   }
@@ -623,9 +645,28 @@ body {
     padding-top: 50px;
     text-align: center;
   }
+  .benefits .benefits__content {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .benefits .benefits__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .benefits .benefits__text + .benefits__text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
+  .footer, .feedback, .reviews, .benefits, .rent {
+    padding: 50px 0;
+  }
+  .feedback__images {
+    display: none;
+  }
   .menu {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -676,6 +717,22 @@ body {
     left: 0;
     top: 9px;
   }
+  .rent .rent__inner .rent__item {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .rent .rent__inner .rent__content {
+    text-align: center;
+  }
+  .rent .rent__inner .rent__item {
+    width: 100%;
+    min-height: 245px;
+  }
+  .rent .rent__inner .rent__item .rent__item-title {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 525px) {
@@ -686,9 +743,44 @@ body {
   .top__items .top__item {
     margin: 20px;
   }
+  .benefits__images {
+    width: 70%;
+  }
+  .benefits .benefits__list {
+    width: 100%;
+  }
+  .benefits .benefits__list .benefits__list-item {
+    margin-right: 0;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 26px;
+  }
+  .benefits .benefits__list .benefits__list-item:after {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .phone {
+    margin-top: 30px;
+    display: inline-block;
+  }
 }
 
 @media (max-width: 410px) {
+  .rent .rent__inner .rent__item {
+    margin: 30px 0;
+  }
   .top__bottom .top__items .top__item {
     width: 100%;
   }

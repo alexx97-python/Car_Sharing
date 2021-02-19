@@ -43,8 +43,31 @@ body{
         border: 1px solid $background-btn;
     }
 }
+@media (max-width: 1250px){
+    .benefits__images{
+        width: 40%;
+    }
+}
+
+@media (max-width: 1140px){
+    .rent {
+        .rent__inner{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .rent__content{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
 
 @media (max-width: 1000px){
+    .footer{
+        .menu{
+            display: none;
+        }
+    }
     .top__heading{
         display: block;
         .top__slider{
@@ -66,9 +89,31 @@ body{
         padding-top: 50px;
         text-align: center;
     }
+
+    .benefits{
+        .benefits__content{
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .benefits__items{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .benefits__text + .benefits__text{
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 860px){
+    .footer, .feedback, .reviews, .benefits, .rent{
+        padding: 50px 0;
+    }
+    .feedback__images{
+        display: none;
+    }
     .menu{
         order: 1;
     }
@@ -114,6 +159,31 @@ body{
             top: 9px;
         }
     }
+
+    .rent{
+        .rent__inner{
+            .rent__item{
+                margin: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .rent{
+        .rent__inner{
+            .rent__content{
+                text-align: center;
+            }
+            .rent__item{
+                width: 100%;
+                min-height: 245px;
+                .rent__item-title{
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 525px){
@@ -123,11 +193,47 @@ body{
             margin: 20px;
         }
     }
+    .benefits__images{
+        width: 70%;
+    }
+    .benefits{
+        .benefits__list{
+            width: 100%;
+            .benefits__list-item{
+                margin-right: 0;
+                text-align: left;
+                padding-right: 0;
+                padding-left: 26px;
+                &:after{
+                    right: auto;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 450px){
+    .footer{
+        .footer__top{
+            flex-direction: column;
+            align-items: center;
+        }
+        .phone{
+            margin-top: 30px;
+            display: inline-block;
+        }
+    }
 }
 
 @media (max-width: 410px){
 
-    
+    .rent{
+        .rent__inner{
+            .rent__item{
+                margin: 30px 0;
+        }
+    }
+}
     .top__bottom{
         .top__items{
             .top__item{
